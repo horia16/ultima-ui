@@ -19,7 +19,7 @@
 </template>
 <script lang="ts">
 import { defineComponent, Ref, ref } from "vue";
-import UIcon from "../u-icon/UIcon.vue";
+import UIcon from "../UIcon/UIcon.vue";
 export default defineComponent({
   name: "UButton",
   props: {

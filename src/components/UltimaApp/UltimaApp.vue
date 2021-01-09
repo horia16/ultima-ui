@@ -4,7 +4,7 @@
   </span>
 </template>
 <script lang="ts">
-import { defineComponent, PropType, Ref, ref } from "vue";
+import { defineComponent, PropType} from "vue";
 import { create, ultimaApp, UltimaOptions } from "@/hooks/ultima";
 export default defineComponent({
   name: "UltimaApp",
