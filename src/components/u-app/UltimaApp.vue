@@ -22,5 +22,6 @@ export default defineComponent({
 </script>
 <style lang="scss">
 .ultima-app {
+  -webkit-tap-highlight-color: transparent;
 }
 </style>

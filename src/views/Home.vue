@@ -1,6 +1,6 @@
 <template>
   <div>
-    <u-button icon="fa-home" :iconRight="true">Test Button</u-button>
+    <u-button icon="mdi:home" :iconRight="true">Test Button</u-button>
   </div>
 </template>
 

@@ -3,6 +3,12 @@
     <button
       :type="type"
       :style="{ flexDirection: iconRight ? 'row-reverse' : 'row' }"
+      class="bg-primary-color:hover"
+      :class="[
+        `bg-${color}-color`,
+        `text-${color}-adaptive`,
+        `u-button-${color}`,
+      ]"
     >
       <u-icon class="u-button-icon" v-if="icon" :name="icon" />
       <div class="u-button-content">
@@ -19,6 +25,7 @@ export default defineComponent({
   props: {
     icon: { type: String, default: null },
     iconRight: { type: Boolean, default: false },
+    color: { type: String, default: "primary" },
     type: { type: String, default: "button" },
   },
   components: { UIcon },
@@ -37,8 +44,20 @@ export default defineComponent({
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.625rem;
-    font-size: 1rem;
+    font-weight: 300;
+    border: 1px solid transparent;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.875rem;
+    line-height: 1.125;
+    border-radius: 0.375rem;
+    transition: all 0.25s cubic-bezier(0.27, 0.01, 0.38, 1.06);
+    box-sizing: border-box;
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      transition: none;
+    }
   }
   .u-button-icon {
     margin-left: 2px;

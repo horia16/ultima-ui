@@ -5,5 +5,5 @@ import ultimaUi from "./ultima-ui";
 
 createApp(App)
   .use(router)
-  .use(ultimaUi)
+  .use(ultimaUi, { dark: false })
   .mount("#app");
